@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TesteFx.jnlp">
+  <information>
+    <title>TesteFx</title>
+    <vendor>Unknown</vendor>
+    <description>TesteFx</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TesteFx.jar" size="98234" download="eager" />
+    <jar href="postgresql-42.2.5.jar" size="825943" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="controller.Main"  name="TesteFx" />
+  <update check="background"/>
+</jnlp>

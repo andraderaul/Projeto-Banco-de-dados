@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QueryController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnUsuariosAction" prefWidth="80.0" text="Usuarios">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="33.0" top="100.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnFilmesAction" prefWidth="80.0" text="Filmes" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="33.0" top="100.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnSeriesAction" prefWidth="80.0" text="Series" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="33.0" top="100.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnLivrosAction" prefWidth="80.0" text="Livros" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="33.0" top="100.0" />
+               </GridPane.margin>
+            </Button>
+            <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="30.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@Img/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="110.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="30.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@Img/filmes.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="110.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="30.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@Img/series.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="110.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="30.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@Img/livros.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#btnIndicacoessAction" prefWidth="80.0" text="Indicação" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="33.0" top="100.0" />
+               </GridPane.margin>
+            </Button>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="110.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="30.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@Img/indicacao.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#btnGeralAction" prefWidth="80.0" text="Geral" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="33.0" top="100.0" />
+               </GridPane.margin>
+            </Button>
+            <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="30.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@Img/10consultas.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#btnVoltarAction" prefWidth="100.0" text="Voltar" BorderPane.alignment="CENTER_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>
